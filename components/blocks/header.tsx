@@ -11,8 +11,8 @@ const navData = {
       href: "./products",
     },
     {
-      label: "Branded Ware",
-      href: "#",
+      label: "Dashboard",
+      href: "/dashboard",
     },
     {
       label: "Promotional ware",
@@ -48,7 +48,7 @@ const navData = {
     },
     {
       label: "Sign up",
-      href: "/sign-up",
+      href: "/signup",
     },
   ],
   shoppingCart: {
