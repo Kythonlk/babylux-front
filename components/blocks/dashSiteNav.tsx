@@ -1,7 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { Home, Package, ShoppingCart, Users, LineChart } from "lucide-react";
+import {
+  Home,
+  Package,
+  ShoppingCart,
+  Users,
+  LineChart,
+  FileText,
+} from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { usePathname } from "next/navigation";
 
@@ -50,6 +57,13 @@ export default function DashSideNav() {
         >
           <LineChart className="h-4 w-4" />
           Analytics
+        </Link>
+        <Link
+          href="/dashboard/invoice"
+          className={isActive("/dashboard/invoice")}
+        >
+          <FileText className="h-4 w-4" />
+          Invoice
         </Link>
       </nav>
     </div>
